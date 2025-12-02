@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Calculator container */
+.calculator-container {
+    background: #fff0f6;
+    border: 3px solid #e5c0ff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Display */
+.calculator-display {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-align: right;
+    border: 3px solid #d0b5ff;
+    background: #f8f0ff;
+    color: #5f3dc4;
+    border-radius: 12px;
+    min-height: 80px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+/* Keypad grid */
+.calculator-keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Base button styles */
+.calculator-keypad button {
+    padding: 18px 12px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 2px solid;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NUMBER BUTTONS */
+.key-number {
+    background: #dee2ff;
+    color: #3c096c;
+    border-color: #bdbdff;
+}
+
+.key-number:hover {
+    background: #ced4ff;
+    transform: translateY(-2px);
+}
+
+.key-number:active {
+    transform: translateY(0);
+}
+
+/* OPERATOR BUTTONS */
+.key-operator {
+    background: #bde0fe;
+    color: #03045e;
+    border-color: #97d0ff;
+}
+
+.key-operator:hover {
+    background: #a2d2ff;
+    transform: translateY(-2px);
+}
+
+.key-operator:active {
+    transform: translateY(0);
+}
+
+/* FUNCTION BUTTONS */
+.key-function {
+    background: #ffd6ff;
+    color: #5a189a;
+    border-color: #e7c6ff;
+    font-size: 16px;
+}
+
+.key-function:hover {
+    background: #e7c6ff;
+    transform: translateY(-2px);
+}
+
+.key-function:active {
+    transform: translateY(0);
+}
+
+/* CONTROL BUTTONS */
+.key-control {
+    background: #ffafcc;
+    color: #670044;
+    border-color: #ff8fb8;
+}
+
+.key-control:hover {
+    background: #ff99bb;
+    transform: translateY(-2px);
+}
+
+.key-control:active {
+    transform: translateY(0);
+}
+
+/* EQUALS BUTTON */
+.key-equals {
+    background: #caffbf;
+    color: #003c15;
+    border-color: #b1ffab;
+    font-weight: 600;
+    font-size: 20px;
+    grid-column: span 2;
+}
+
+.key-equals:hover {
+    background: #b9f6aa;
+    transform: translateY(-2px);
+}
+
+.key-equals:active {
+    transform: translateY(0);
+}
